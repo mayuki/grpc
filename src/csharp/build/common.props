@@ -20,5 +20,14 @@
   <PropertyGroup>
     <LangVersion>7.2</LangVersion>
   </PropertyGroup>
+
+  <!-- NuGet package information -->
+  <PropertyGroup>
+    <PackageIcon>packageIcon.png</PackageIcon>
+    <PackageIconFullPath>$(MSBuildThisFileDirectory)..\packageIcon.png</PackageIconFullPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(PackageIconFullPath)" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>
 
